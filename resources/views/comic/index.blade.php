@@ -28,12 +28,13 @@
         <td>{{ $comic->price}}$</td>
         <td>{{ $comic->sale_date}}</td>
         <td><a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">Dettagli</a></td>
+        <td><a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica Fumetto</a></td>
     </tr>  
     @endforeach
     </tbody>
     </table>
     <div class="text-center p-4">
       <a href="{{ route('comics.create') }}" class="btn btn-success">Inserisci un nuovo Fumetto</a>
-  <table class="table">
+    </div>
 </div>
 @endsection
