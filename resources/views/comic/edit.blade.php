@@ -14,8 +14,10 @@ Creazione
 <div class="container">
     <a href="{{ route('comics.index') }}" class="btn btn-primary btn-sm mb-4">Torna alla home</a>
    
-    <form action="{{ route('comics.store') }}" method="POST">
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
         @csrf
+
+        @method('PUT')
         <div class="mb-3">
           <label for="src" class="form-label">Immagine</label>
           <input type="text" class="form-control" id="src" name="thumb" value="{{$comic->thumb}}">
