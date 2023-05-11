@@ -4,7 +4,7 @@
 {{ $comic->title}}
 @endsection
 @section('page.title')
-<div class="container">
+<div class="container text-center p-4">
   <h1>{{ $comic->title}}</h1>
 </div>
 @endsection
@@ -20,7 +20,7 @@
           <p class="card-text">{{ $comic->description}}</p>
           <p class="card-text"><small class="text-body-secondary">Artists: {{ $comic->artists}}</small></p>
           <p class="card-text"><small class="text-body-secondary">Writers: {{ $comic->writers}}</small></p>
-          <a href="{{ route('comics.index') }}" class="btn btn-primary btn-sm">Torna all'elenco</a>
+          <a href="{{ route('comics.index') }}" class="btn btn-primary btn-sm">Torna alla home</a>
         </div>
       </div>
 </div>  

@@ -5,14 +5,14 @@ Creazione
 @endsection
 
 @section('page.title')
-<div class="container">
+<div class="container text-center p-4">
   <h1>Inserisci i dati</h1>
 </div>
 @endsection
 
 @section('page.main')
 <div class="container">
-    <a href="{{ route('comics.index') }}" class="btn btn-primary btn-sm">Torna all'elenco</a>
+    <a href="{{ route('comics.index') }}" class="btn btn-primary btn-sm mb-4">Torna alla home</a>
    
     <form action="{{ route('comics.store') }}" method="POST">
         @csrf
@@ -50,7 +50,7 @@ Creazione
             <label for="writers" class="form-label">Scrittori</label>
             <textarea class="form-control" id="writers" rows="2" name="writers"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Invia</button>
       </form>
 
 </div>  

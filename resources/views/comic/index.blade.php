@@ -5,14 +5,14 @@
 @endsection
 
 @section('page.title')
-<div class="container">
+<div class="container text-center p-4">
     <h1>Elenco fumetti</h1>
 </div>  
 @endsection
 
 @section('page.main')
 <div class="container">
-<table class="table table-dark table-striped">
+<table class="table">
     <thead>
       <tr>
         <th scope="col">Titolo</th>
@@ -32,8 +32,8 @@
     @endforeach
     </tbody>
     </table>
-    <div class="text-center">
-      <a href="{{ route('comics.create') }}" class="btn btn-danger">Inserisci un nuovo Fumetto</a>
+    <div class="text-center p-4">
+      <a href="{{ route('comics.create') }}" class="btn btn-success">Inserisci un nuovo Fumetto</a>
   <table class="table">
 </div>
 @endsection
