@@ -41,13 +41,21 @@ Creazione
 
         <div class="mb-3">
             <label for="prezzo" class="form-label">Prezzo</label>
-            <input type="number" class="form-control @error('price') is-invalid @enderror" id="prezzo" name="price" min="5" max="20" value="{{ old('price') }}">
+            <input type="number" class="form-control @error('price') is-invalid @enderror" id="prezzo" name="price" min="5" max="50" value="{{ old('price') }}">
             @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
+
         <div class="mb-3">
-            <label for="serie" class="form-label">Serie</label>
+            <label for="type" class="form-label">Tipo</label>
+            <input type="text" class="form-control @error('series') is-invalid @enderror" id="type" name="type" value="{{ old('type') }}">
+            @error('series')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
+        </div>
+        <div class="mb-3">
+            <label for="series" class="form-label">Serie</label>
             <input type="text" class="form-control @error('series') is-invalid @enderror" id="serie" name="series" value="{{ old('series') }}">
             @error('series')
                 <div class="alert alert-danger">{{ $message }}</div>

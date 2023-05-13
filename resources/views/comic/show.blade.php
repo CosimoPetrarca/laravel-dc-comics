@@ -17,6 +17,8 @@
     </div>
         <div class="card-body">
           <h5 class="card-title">{{ $comic->title}}</h5>
+          <p class="card-text">{{ $comic->type}}</p>
+          <p class="card-text">{{ $comic->series}}</p>
           <p class="card-text">{{ $comic->description}}</p>
           <p class="card-text"><small class="text-body-secondary">Artists: {{ $comic->artists}}</small></p>
           <p class="card-text"><small class="text-body-secondary">Writers: {{ $comic->writers}}</small></p>
